@@ -28,6 +28,9 @@ namespace Escola_POO_BASE.Classes
         public SqlDataReader dr; // Recebe os Select's
 
         public DataSet ds;// trabalha com multiplas tabelas
+         
+
+
 
 
 
