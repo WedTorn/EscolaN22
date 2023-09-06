@@ -83,6 +83,8 @@ namespace Escola_POO_BASE.Telas
             DgvUsuarios.ClearSelection();
             BtnCadastrar.Enabled = true;
             BtnAlterar.Enabled = false ;
+            CbbBuscar.SelectedIndex = 0;
+            TxtBuscar.Focus();
         }
 
 
@@ -300,6 +302,17 @@ namespace Escola_POO_BASE.Telas
             List<Aluno> listaAlunosFiltrada = Aluno.Buscar(_alunos, CbbBuscar.SelectedIndex, TxtBuscar.Text);
             CarregaDgvUsuarios(listaAlunosFiltrada);
             
+        }
+
+        private void CbbBuscar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            //metodo que clica no botaão via codigo 
+            BtnBuscar.PerformClick();
         }
     }
 }

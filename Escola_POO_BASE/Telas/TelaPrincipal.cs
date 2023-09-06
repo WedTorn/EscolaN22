@@ -74,7 +74,8 @@ namespace Escola_POO_BASE.Telas
         private void TsiCadastraAluno_Click(object sender, EventArgs e)
         {
             TelaCadastraAluno tlCadAluno = new TelaCadastraAluno(_userLogado);
-            tlCadAluno.ShowDialog();
+            tlCadAluno.MdiParent = this;
+            tlCadAluno.Show();
         }
 
         private void cadastrosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -90,6 +91,16 @@ namespace Escola_POO_BASE.Telas
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void TslDataHora_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            TslDataHora.Text = DateTime.Now.ToLongDateString() + " | " + DateTime.Now.ToLongTimeString();
         }
     }
 }

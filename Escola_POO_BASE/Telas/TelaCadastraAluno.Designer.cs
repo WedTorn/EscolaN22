@@ -46,9 +46,9 @@
             this.BtnNovo = new System.Windows.Forms.Button();
             this.BtnAlterar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.CbbBuscar = new System.Windows.Forms.ComboBox();
             this.TxtBuscar = new System.Windows.Forms.TextBox();
+            this.CbbBuscar = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvUsuarios)).BeginInit();
@@ -244,14 +244,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Painel De Busca";
             // 
-            // label6
+            // TxtBuscar
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 30);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 25);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Buscar Por:";
+            this.TxtBuscar.Location = new System.Drawing.Point(430, 27);
+            this.TxtBuscar.Name = "TxtBuscar";
+            this.TxtBuscar.Size = new System.Drawing.Size(326, 31);
+            this.TxtBuscar.TabIndex = 2;
+            this.TxtBuscar.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
             // 
             // CbbBuscar
             // 
@@ -265,17 +264,20 @@
             this.CbbBuscar.Name = "CbbBuscar";
             this.CbbBuscar.Size = new System.Drawing.Size(262, 33);
             this.CbbBuscar.TabIndex = 1;
+            this.CbbBuscar.SelectedIndexChanged += new System.EventHandler(this.CbbBuscar_SelectedIndexChanged);
             // 
-            // TxtBuscar
+            // label6
             // 
-            this.TxtBuscar.Location = new System.Drawing.Point(430, 27);
-            this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(326, 31);
-            this.TxtBuscar.TabIndex = 2;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 30);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 25);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Buscar Por:";
             // 
             // BtnBuscar
             // 
-            this.BtnBuscar.Location = new System.Drawing.Point(1068, 100);
+            this.BtnBuscar.Location = new System.Drawing.Point(1053, 57);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(154, 51);
             this.BtnBuscar.TabIndex = 16;
